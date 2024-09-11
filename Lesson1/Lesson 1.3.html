@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("**** Decision making Statements ****");
+        document.write("<br>");
+        document.write("<br>");
+
+        document.write("**** IF STATEMENT ****");
+        document.write("<br>");
+        var a = 19;
+        if(a>=18)
+    {
+        document.write("You are an Adult");
+    }
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("**** IF ELSE STATEMENT ****");
+    document.write("<br>");
+    if(a>=18)
+    {
+        document.write("You are an adult");
+    }
+    else 
+    {
+        document.write("you are a child");
+    }
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("**** IF-ELSE-IF STATEMENT ****");
+    document.write("<br>");
+    if(a>18)
+    {
+        document.write("you are an adult");
+    }
+    else if(a=18)
+    {
+        document.write("you are a teen");
+    }
+    else{
+        document.write("you are a kid");
+    }
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("**** NESTED IF-ELSE ****");
+    document.write("<br>");
+    if(a>18)
+    {
+        document.write("you are qualified");
+        document.write("<br>");
+        if(a=18)
+        {
+            document.write("You are adult");
+        }        
+
+    }
+    else
+    {
+        document.write("you are kid");
+    }
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("**** SWITCH CASE STATEMENT ****");
+    document.write("<br>");
+    switch(a)
+    {
+        case 17: 
+            document.write("Your age is 17");
+            break;
+        
+        case 18:
+            document.write("Your age is 18");
+            break;
+
+        case 19:
+            document.write("Your age is 19");
+            break;
+        
+        default :
+            document.write("Wrong choice!!!");
+    }
+    document.write("<br>");
+    </script>
+</body>
+</html>

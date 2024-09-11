@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOOPS</title>
+</head>
+<body>
+    <script>
+        document.write("**** FOR LOOP ****");
+        document.write("<br>");
+        let i;
+        for(i=0;i<5;i++)
+    {
+        document.write("Hello World");
+        document.write("<br>");
+    }
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("**** WHILE LOOP ****");
+    document.write("<br>");
+    i=0
+    while(i<5)
+    {
+        document.write("Hello World");
+        document.write("<br>");
+        i++;
+    }
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("**** DO-WHILE LOOP ****");
+    document.write("<br>");
+    i=0;//initialization of do
+    do{
+        document.write("Hello World");
+        document.write("<br>");
+        i++;
+    }while(i<5);
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("**** CONTINUE STATEMENT ****");
+    document.write("<br>");
+    while(i<5)
+    {
+        i++;
+        if(i==4)
+        {
+            continue;
+        }
+        document.write(i);
+    }
+    document.write(" Exit the loop");
+    document.write("<br>");
+    document.write("<br>");
+
+    document.write("**** BREAK STATEMENT");
+    document.write("<br>");
+    while(i<5)
+    {
+        i++;
+        if(i==4)
+        {
+            break;
+        }
+        document.write(i);
+    }
+    document.write("Exit from Loop");
+    </script>
+</body>
+</html>
