@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //add elements in array using unshift method
+        var a=new Array();
+        a[0]="java";
+        document.write("Original Length : "+a.length+"<br>");
+        for(var i=0;i<a.length;i++)
+        {
+            document.write("Elements : "+a[i]);        
+        }
+        a.unshift("C","C++","VB");
+        document.write("New length after unshift method : "+a.length+"<br>");
+        for(i=0;i<a.length;i++)
+        {
+            document.write("Added Elements = "+a[i]+"<br>");
+        }
+    </script>
+</body>
+</html>
