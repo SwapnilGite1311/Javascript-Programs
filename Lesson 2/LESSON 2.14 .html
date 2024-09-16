@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //implement shift method
+        var a = new Array();
+        a[0]=5;
+        a[1]=3;
+        a[2]=4;
+        a[3]=2;
+        a[4]=1;
+        document.write("Elements before shift : <br> ");
+        for(let i=0;i<a.length;i++)
+        {
+            document.write(a[i]+"<br>");
+        }
+        a.shift();
+        document.write("Elements after shift :<br>");
+        for(let i=0;i<a.length;i++)
+        {
+            document.write(a[i]+"<br>");
+        }
+    </script>
+</body>
+</html>
