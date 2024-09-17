@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //remove element from array using splice method
+        var a=new Array();
+        a[0]="C";
+        a[1]="C++";
+        a[2]="Java";
+        a[3]="VB";
+        document.write("Original Length = "+a.length+"<br>");
+        a.splice(2);
+        document.write("New Length = "+a.length+"<br>");
+        for(let i=0;i<a.length;i++)
+        {
+            document.write(a[i]+"<br>");
+        }
+    </script>
+</body>
+</html>

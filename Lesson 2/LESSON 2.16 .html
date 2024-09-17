@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //add element in array using splice method
+        var a = new Array();
+        a[0]="C";
+        a[1]="C++";
+        document.write("Original Length = "+a.length+"<br>");
+        a.splice(2,0,"Java","PHP");
+        document.write("New Length = "+a.length+ "<br>");
+        for(let i=0;i<a.length;i++)
+        {
+            document.write("<br>"+a[i]);
+        } 
+    </script>
+</body>
+</html>
