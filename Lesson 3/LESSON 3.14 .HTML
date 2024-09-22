@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //key events and handling
+        function down()
+        {
+            document.frm1.b1.value="Key DOWN";
+        }
+        function up()
+        {
+            document.frm1.b1.value="Key UP";
+        }
+        function press()
+        {
+            document.frm1.b2.value="Key Press";
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="frm1">
+        <input type="text" name="t1" value="" onkeydown="down()" onkeyup="up()" onkeypress="press()">
+        <br>
+        <input type="button" name="b1" value="press key">
+        <input type="button" name="b2" value="key">
+    </form>
+</body>
+</html>
