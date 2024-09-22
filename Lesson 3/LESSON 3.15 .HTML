@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //access value from element of form
+        function display()
+        {
+            alert("Value = "+document.forms.entry.Cname.value);
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="post" name="entry">
+        Country : <input type="text" name="Cname"> <br>
+        <input type="button" name="b1" value="Print" onclick="display()">
+    </form>
+</body>
+</html>
