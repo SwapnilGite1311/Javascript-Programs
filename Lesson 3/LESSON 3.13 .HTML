@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //mouse events and handling
+        function up()
+        {
+            document.frm1.b1.value="Mouse Up";
+        }
+        function down()
+        {
+            document.frm1.b1.value="Mouse down";
+        }
+        function move()
+        {
+            alert("mouse moves");
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="frm1">
+        <input type="button" name="b1" value="click" onmouseup="up()" onmousedown="down()"><br><br><br>
+        <textarea name="tal" rows="10" cols="10" onmousemove="move()"></textarea>
+    </form>
+</body>
+</html>
