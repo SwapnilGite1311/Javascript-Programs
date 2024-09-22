@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //onmouseover onmouseout event demo
+        function over()
+        {
+            document.frm1.b1.value="Mouse Over";
+        }
+        function out()
+        {
+            document.frm1.b1.value="Mouse Out";
+        }
+    </script>
+</head>
+<body>
+    Mouse over & Mouse Out
+    <form action="" name="frm1">
+        <input type="button" name="b1" value="click" onmouseover="over()" onmouseout="out()">
+    </form>
+</body>
+</html>
