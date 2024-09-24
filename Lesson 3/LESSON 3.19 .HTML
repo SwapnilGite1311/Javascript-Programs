@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //change attribute value dynamically
+        function change(Element)
+        {
+            Element.style.color ='blue';
+            Element.style.backgroundColor = 'silver';
+        }
+    </script>
+</head>
+<body>
+    <form name="entry" method="">
+        Country : <input type="text" value="Australia" name="Cname" onchange="change(this)" id="">
+        <br>
+        State : <input type="text" value="Queensland" name="Sname" onchange="change(this)" id=""><br>
+        <input type="button" name="b2" value="Send" id="">
+    </form>
+</body>
+</html>
