@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //access all elements of from using elements array
+        function display()
+        {
+            with(document.forms.entry)
+            {
+                alert("value = "+elements[0].value+elements[1].value+elements[2].value);
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" method="post" name="entry"></form>
+    Country : <input type="text" name="Cname" id=""><br>
+    State : <input type="text" name="Sname" id=""><br>
+    City : <input type="text" name="Ciname" id=""><br>
+    <input type="button" name="b1" value="Print" onclick="display()"/><br>
+</body>
+</html>
