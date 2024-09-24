@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //change value based on value selected by user
+        function Set()
+        {
+            with(document.forms.frm1)
+            {
+                if(Fname.value!="")
+                {
+                    msg.value = "Welcome" + " " +Fname.value;        
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="frm1" method="post">
+        First Name : <input type="text" name="Fname" onchange="Set()"><br><br>
+        Message : <input type="text" name="msg" id=""><br>
+    </form>
+</body>
+</html>
