@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //change the label of the form element dynamically
+        function show(e)
+        {
+            with(document.forms.frm1)
+            {
+                if(e == 'State')
+                {
+                    b1.value='City'
+                    op1[0].text="Maharashtra"
+                    op1[0].value=1
+                    op1[1].text="Gujarat"
+                    op1[1].value=2
+                    op1[2].text="Andra_Pradesh"
+                    op1[2].value=3
+                }
+                if(e == 'City')
+                {
+                    b1.value='State'
+                    op1[0].text="Pune"
+                    op1[0].value=1
+                    op1[1].text="Ahmadabad"
+                    op1[1].value=2
+                    op1[2].text="Vijayawada"
+                    op1[2].value=3
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="frm1" method="post">
+        <p>
+            <select name="op1" size="3">
+                <option value="1">Maharashtra</option>
+                <option value="1">Gujarat</option>
+                <option value="1">Andra_Pradesh</option>
+            </select>
+            <br>
+            <input type="submit" name="Submit" value="Submit">
+            <input type="reset" name="b1" value="City" onclick="show(this.value)">
+        </p>
+    </form>
+</body>
+</html>
