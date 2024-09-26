@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //evaluate checkbox selected by user
+        function show()
+        {
+            with(document.forms.frm1)
+            {
+                if(c1.checked == true)
+                {
+                    alert("C");
+                }
+                if(o1.checked == true)
+                {
+                    alert("C++");
+                }
+                if(j1.checked == true)
+                {
+                    alert("JAVA");
+                }
+                if(p1.checked == true)
+                {
+                    alert("PHP");
+                }
+                if(s1.checked == true)
+                {
+                    alert("JAVASCRIPT");
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form action="" name="frm1" method="post">
+        <p>
+            <input type="checkbox" name="c1" value="c">C
+            <br>
+            <input type="checkbox" name="o1" value="c">C++
+            <br>
+            <input type="checkbox" name="j1" value="c">JAVA
+            <br>
+            <input type="checkbox" name="p1" value="c">PHP
+            <br>
+            <input type="checkbox" name="s1" value="c">JAVASCRIPT
+            <br>
+            <input type="reset" name="r1" value="Show" onclick="show()">
+            <br>
+        </p>
+    </form>
+</body>
+</html>
