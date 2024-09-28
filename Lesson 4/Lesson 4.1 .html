@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //creating cookie
+        function createCookie()
+        {
+            var cookie_value = username.value;
+            document.cookie = "username="+cookie_value;
+            alert("Cookie is created");
+        }
+    </script>
+</head>
+<body>
+    Enter Username : <input type="text" name="" id="username">
+    <input type="button" value="create cookie" onclick="createCookie()">
+</body>
+</html>
