@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //delete cookie
+        function deleteCookie()
+        {
+            var cookie_value = username.value;
+            document.cookie="username = "+cookie_value+" expires = Thu, 01 Jan 1970 00:00:01 GMT";
+            alert("cookie was deleted");
+        }
+    </script>
+</head>
+<body>
+    Enter Username: <input type="text" name="" id="username">
+    <input type="button" value="Delete Cookie" onclick="deleteCookie()">
+</body>
+</html>
