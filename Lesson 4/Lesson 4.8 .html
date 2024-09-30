@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //change the content of whole window
+        function changeContent()
+        {
+            document.write("<h3><p>After Clicking the button New Content</p></h3>");
+        }
+    </script>
+</head>
+<body>
+    <p>Click to change the content of whole window</p>
+    <input type="button" value="Change Content" onclick="changeContent()">
+    <h3><p id="para">Before Clicking the Button: Old Content</p></h3>
+</body>
+</html>
