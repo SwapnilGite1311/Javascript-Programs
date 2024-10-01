@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //open multiple windows by using for loop
+        function openWindows()
+        {
+            for(i=0;i<5;i++)
+            {
+                window.open("","","width=200, height=100");
+            }
+        }
+    </script>
+</head>
+<body>
+    <p>Click the button to open multiple windows</p>
+    <input type="button" onclick="openWindows()" value="Open Windows">
+</body>
+</html>
