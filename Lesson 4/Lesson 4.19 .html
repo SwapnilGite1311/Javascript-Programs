@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //javascript code to get the Hostname
+        function displayFunction()
+        {
+            document.getElementById("para").innerHTML="The host of the webpage is :"+window.location.hostname;
+        }
+    </script>
+</head>
+<body>
+    <p>Click to get The Host of the Webpage</p>
+    <input type="button" value="Get the Host" onclick="displayFunction()">
+    <p id="para"></p>
+</body>
+</html>
