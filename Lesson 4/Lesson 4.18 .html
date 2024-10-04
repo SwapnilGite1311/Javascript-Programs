@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //javascript code to get a pathname
+        function displayFunction()
+        {
+            document.getElementById("para").innerHTML="The Webpage is located at:"+window.location.pathname;
+        }
+    </script>
+</head>
+<body>
+    <p>Click to get The Path of the Webpage</p>
+    <input type="button" value="Get the Path" onclick="displayFunction()">
+    <p id="para"></p>
+</body>
+</html>
