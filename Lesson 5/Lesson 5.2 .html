@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //code to find the non-matching characters
+        var p = /[^abc]/;
+        function testMatch()
+        {
+            var str = textfield.value;
+            if(p.test(str))
+            {
+                alert("The String "+str+" contains the characters other than a,b,c");
+            }
+            else
+            {
+                alert("The String "+str+" does not contains the characters other than a,b,c");
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3><p>checking the availability of string</p></h3>
+    Enter the String <input type="text" id="textfield">
+    <input type="button" value="check" onclick="testMatch()">
+</body>
+</html>
