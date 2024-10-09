@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //match string by using exec() function of Reg.Exp.
+        function testMatch()
+        {
+            var str = textfield.value;
+            var patt = /student/g;
+            var res = patt.exec(str);
+            if(res!=null)
+            {
+                alert("The String "+str+" contains student");
+            }
+            else
+            {
+                alert("The String "+str+" does not contain student");
+            }
+        }
+    </script>
+</head>
+<body>
+   <h3><p>checking the availability of word in given string</p></h3>
+   Enter String <input type="text" id="textfield">
+   <input type="button" value="Check" onclick="testMatch()">
+</body>
+</html>
