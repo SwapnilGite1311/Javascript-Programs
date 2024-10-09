@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //return the function that create RegExp objects prototype
+        function testMatch()
+        {
+            var patt=new RegExp("Hello World","g");
+            var res = patt.constructor;
+            document.getElementById("para").innerHTML=res;
+        }
+    </script>
+</head>
+<body>
+    <h3><p>Click the button to get the function of REgExp</p></h3>
+    <input type="button" value="Check" onclick="testMatch()">
+    <p id="para"></p>
+</body>
+</html>
