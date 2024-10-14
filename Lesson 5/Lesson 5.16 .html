@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>More efficient MouseOver by using addEventListener</p>
+    <h1><p id="para">Change Style by Mouse Over</p></h1>
+    <script>
+        //perform more efficient rollover operation
+        document.getElementById("para").addEventListener("mouseover",mouseOver);
+        document.getElementById("para").addEventListener("mouseout",mouseOut);
+        function mouseOver()
+        {
+            document.getElementById("para").style.color="blue";
+        }
+        function mouseOut()
+        {
+            document.getElementById("para").style.color="black";
+        }
+    </script>
+</body>
+</html>
