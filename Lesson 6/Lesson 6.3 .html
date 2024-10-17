@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //display a moving message on the status bar
+        var scrollPos = 0
+        var maxScroll=100
+        var blanks = ""
+        function scrollText(text,milliseconds)
+        {
+            window.setInterval("displayText('+text+')",milliseconds);
+        }
+        function displayText()
+        {
+            window.defaultStatus = blanks+text
+            ++scrollPos
+            blanks+=""
+        }
+    </script>
+</head>
+<body onload="scrollText('Welcome to Javascript',300)">
+    <p>Watch the text scroll at the bottom of this window!</p>
+    
+</body>
+</html>
