@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //display static message on status bar
+        window.status="Welcome to status bar. This is a Static message."
+    </script>
+</head>
+<body>
+    <h3><p>Building static message in status bar.</p></h3>  
+    <strong>Note:- The method used in this program is window.status() it might not work on updated browsers</strong>  
+</body>
+</html>
+
+<!-- for updated browsers use the following code-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #statusMessage {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #f1f1f1;
+            color: #333;
+            text-align: left;
+            padding: 10px;
+            box-shadow: 0px -1px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h3><p>Building static message in status area.</p></h3>    
+    <div id="statusMessage">Welcome to the page. This is a static message.</div>
+</body>
+</html>
