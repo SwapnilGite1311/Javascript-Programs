@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //link all images in banner to URLs
+        banner_array = new Array('c:\Users\Swapnil gite\Documents\GITHUB-REPOSITORY\Projects\Travel Website\image4(Hawaii).jpg','c:\Users\Swapnil gite\Documents\GITHUB-REPOSITORY\Projects\Travel Website\image5(Paris).jpg','c:\Users\Swapnil gite\Documents\GITHUB-REPOSITORY\Projects\Travel Website\image6(Tokyo).jpg','c:\Users\Swapnil gite\Documents\GITHUB-REPOSITORY\Projects\Travel Website\image7(Egypt).jpg');
+        link_array=new Array('https://www.google.com/','https://mail.google.com/mail/u/0/','https://openai.com/chatgpt/overview/','https://youtube.com/');
+        banner = 0;
+
+        function DisplayBanners()
+        {
+            if(document.images)
+            {
+                banner++;
+                if(banner==banner_array.length)
+                {
+                    banner=0
+                }
+                document.ChangeBanner.src=banner_array[banner]
+                setTimeout("DisplayBanners()",5000)
+            }
+        }
+
+        function display_page()
+        {
+            document.location.href=link_array[banner]
+        }
+    </script>
+</head>
+<body onload="DisplayBanners()">
+    <center>
+        <a href="Javascript:display_page()">
+            <img src="c:\Users\Swapnil gite\Documents\GITHUB-REPOSITORY\Projects\Travel Website\image6(Tokyo).jpg" height="150" width="100%" name="ChangeBanner">
+        </a>
+    </center>
+    
+</body>
+</html>
