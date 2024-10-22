@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //create a slideshow
+        img_array=new Array('c:\Users\Swapnil gite\Documents\GITHUB-REPOSITORY\Projects\Travel Website\image4(Hawaii).jpg','c:\Users\Swapnil gite\Documents\GITHUB-REPOSITORY\Projects\Travel Website\image5(Paris).jpg','c:\Users\Swapnil gite\Documents\GITHUB-REPOSITORY\Projects\Travel Website\image6(Tokyo).jpg','c:\Users\Swapnil gite\Documents\GITHUB-REPOSITORY\Projects\Travel Website\image7(Egypt).jpg')
+        img=0;
+        function DisplayImg(num)
+        {
+            img=img+num;
+            if(img>img_array.length-1)
+            {
+                img=0;
+            }
+
+            if(img<0)
+            {
+                img=img_array.length-l;
+            }
+            document.Slide.src=img_array[img];
+        }
+    </script>
+</head>
+<body>
+    <img src="c:\Users\Swapnil gite\Documents\GITHUB-REPOSITORY\Projects\Travel Website\image6(Tokyo).jpg" width="400" height="220" name="Slide">
+    <br><br>
+    <input type="button" value="Previous" onclick="DisplayImg(-1)">
+    <input type="button" value="Next" onclick="DisplayImg(-1)">
+</body>
+</html>
