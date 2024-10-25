@@ -1,7 +1,7 @@
 console.log("Hello World");
 
 let stud ={
-    name:"Swapnil",
+    name:"Swapnil Gite",
     age:18,
     year:"TY"
 };
