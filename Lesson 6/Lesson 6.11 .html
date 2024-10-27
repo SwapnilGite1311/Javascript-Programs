@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //validate the menu section
+        function myFunction()
+        {
+            var select=document.getElementById("student");
+            var x=document.getElementById("mySelect").value;
+            if(x=="Select Subject")
+            {
+                alert("Please Select Subject");
+            }
+            else
+            {
+                document.getElementById("demo").innerHTML="You Selected: "+x;
+            }
+        }
+    </script>
+</head>
+<body>
+    <select name="" id="mySelect">
+        <option value="Select Subject">Select Subject</option>
+        <option value="OOP">OOP</option>
+        <option value="CG">CG</option>
+        <option value="DBMS">DBMS</option>
+        <option value="DSU">DSU</option>
+        <option value="DTE">DTE</option>
+    </select>
+    <br>
+    <input type="button" value="Submit" onclick="myFunction()">
+    <br>
+    <p id="demo"></p>
+</body>
+</html>
