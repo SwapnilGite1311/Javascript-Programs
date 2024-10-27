@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //hide the email address
+        hide_email = function(email_address)
+        {
+            var avg, splitted, part1, part2;
+            splitted=email_address.split("@");
+            part1 = splitted[0];
+            avg=part1.length/2;
+            part1 = part1.substring(0, (part1.length-avg));
+            part2 = splitted[1];
+            return part1+"...@"+part2;
+        };
+        alert(hide_email("javascript_2024@gmail.com"));
+    </script>
+</head>
+<body>
+    <h3><p>Email Address is Protected</p></h3>
+</body>
+</html>
